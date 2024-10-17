@@ -1,0 +1,162 @@
+:root{
+    --primary-color: #0B3062;
+    --secondary-color: #C7DDF1;
+    --text-color: #000000;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: var(--text-color);
+    font-family: Roboto, system-ui;
+    /* background-image: url(/IMG/HEADING-photo.jpg);
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;  */
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1{
+    padding: 0;
+    font-weight: 600;
+    /* minimaliai = 39px, dabartine reiksme, maximaliai =  61px */
+    font-size: clamp(39px,  5vw, 61px);
+    line-height: clamp(47px, 7.5vw, 73px);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+
+
+/* TOP HEADER PRADZIA */
+.TOP-HEADER{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.8);
+}
+
+.TOP-HEADER__navigation {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 40px;
+    margin-bottom: 0;
+}
+
+.TOP-HEADER__navigation li{
+    margin: 0 10px;
+}
+
+.TOP-HEADER .TOP-HEADER__navigation li a {
+    line-height: 20px;
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+.TOP-HEADER .TOP-HEADER__navigation li a:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+.LOGO{
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.TOP-HEADER__book-now-btn {
+    padding: 10px 20px; 
+    border: 2px solid var(--primary-color); 
+    background-color: transparent; 
+    color: var(--primary-color); 
+    border-radius: 25px; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.TOP-HEADER__book-now-btn:hover {
+    background-color: var(--primary-color); 
+    color: var(--secondary-color); 
+}
+
+/* SEARCH MYGTUKAS IR LAUKAS */
+.search-bar{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-input {
+    padding: 12px;
+    border: 1px solid var(--primary-color); 
+    border-radius: 25px;
+    width: 600px; 
+    margin-right: 10px; 
+    font-size: 16px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.search-btn {
+    padding: 12px 20px;
+    border: none; 
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 50px;
+    cursor: pointer; 
+}
+
+.search-btn:hover {
+    background-color: var(--primary-color)
+}
+
+/* GALERIJOS SEKCIJOS STILIAI */
+.gallery-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 40px 20px;
+    background-color: white;
+    /* background-color: rgba(255, 255, 255, 0.9);  */
+}
+
+.gallery-section__article {
+    width: 300px; 
+    margin: 20px; 
+    text-align: center; 
+    border: 1px solid var(--secondary-color); 
+    border-radius: 10px;
+    overflow: hidden; 
+    background-color: #fff; 
+}
+
+.gallery-section__article img {
+    width: 100%; 
+    height: auto; 
+    border-bottom: 2px solid var(--secondary-color); 
+}
+
+.gallery-section__article h2 {
+    margin: 5px 0px; 
+    font-size: 18px; 
+    color: var(--primary-color); 
+}
+
+.gallery-section__article p {
+    font-size: 14px; 
+    color: var(--text-color); 
+    padding: 8px 5px; 
+}
+
+
+
+
+    
